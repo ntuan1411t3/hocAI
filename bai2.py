@@ -28,7 +28,7 @@ def load_planar_dataset(seed):
 
 X, Y = load_planar_dataset(1)
 
-plt.scatter(X[0, :], X[1, :], c=Y, s=40, cmap=plt.cm.Spectral);
+#plt.scatter(X[0, :], X[1, :], c=Y, s=40, cmap=plt.cm.Spectral);
 
 ### START CODE HERE ### (≈ 3 lines of code)
 shape_X = X.shape
@@ -40,12 +40,12 @@ print ('The shape of X is: ' + str(shape_X))
 print ('The shape of Y is: ' + str(shape_Y))
 print ('I have m = %d training examples!' % (m))
 
-# Train the logistic regression classifier
-clf = sklearn.linear_model.LogisticRegressionCV();
-clf.fit(X.T, Y.T);
-
-# Print accuracy
-LR_predictions = clf.predict(X.T)
-print ('Accuracy of logistic regression: %d ' % float((np.dot(Y, LR_predictions) + np.dot(1 - Y,1 - LR_predictions)) / float(Y.size) * 100) +
-       '% ' + "(percentage of correctly labelled datapoints)")
+# # Train the logistic regression classifier
+# clf = sklearn.linear_model.LogisticRegressionCV();
+# clf.fit(X.T, Y.T);
+#
+# # Print accuracy
+# LR_predictions = clf.predict(X.T)
+# print ('Accuracy of logistic regression: %d ' % float((np.dot(Y, LR_predictions) + np.dot(1 - Y,1 - LR_predictions)) / float(Y.size) * 100) +
+#        '% ' + "(percentage of correctly labelled datapoints)")
 
