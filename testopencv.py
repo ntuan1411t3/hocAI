@@ -10,3 +10,4 @@ img = cv2.imread('watch.jpg',cv2.IMREAD_GRAYSCALE)
 #plt.show()
 
 print("hello world")
+print("chao ban")
